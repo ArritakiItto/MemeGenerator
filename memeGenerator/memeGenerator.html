@@ -1,51 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-       
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" content="width=content-width, initial-scale=1">
+    <title>Meme Generator</title>
+  </head>
+  <body>
 
-        <title>Meme Generator</title>
-        <style>
-            .meme-generator {
-                margin: 20px auto;
-                width: 400px;
-                font-family: sans-serif;
-            }
-
-            .meme-generator {
-                display: block;
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
-
-            .meme-generator {
-                width: 100%;
-                box-sizing: border-box;
-                margin-bottom: 20px;
-            }
-
-            #meme {
-                width: 100%;
-            }
+    <h1>Meme Generator</h1>
+   
+    <form>
+        File: <input id="image-file" type="file" mulitple>
+        top-text: <input id="top-text" type="text">
+        bottom-text: <input id="bottom-text" type="text">
+        <button type="submit" style="float: right;">Generate</button>
+      </form>
 
 
-            
-
-        </style>
-    </head>
-    <body>
-        <div class="meme-generator">
-            <label>Image</label>
-            <input type="file" id="imageFileInput">
-            <label>Top Text</label>
-            <input type="text" id="topTextInput">
-            <label>Bottom Text</label>
-            <input type="text" id="bottomTextInput">
-
-            <canvas id="meme"></canvas>
-        </div>
-
-        <script src="memeScript.js"
-    </body>
+      <div id="location"></div>
+    
+    <script src="memGenerator.js"></script>
+  </body>
 </html>

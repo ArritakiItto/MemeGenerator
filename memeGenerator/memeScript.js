@@ -1,6 +1,8 @@
-let img = document.querySelector("image-file");
-let form = document.querySelector("form");
-const button = document.querySelector("button");
+let img = document.querySelector("#image-file");
+let form = document.querySelector("form")
+let topTxt = document.querySelector("#top-text");
+let bottomTxt = document.querySelector("#bottom-text");
+const button = document.querySelector("#submit");
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
@@ -10,7 +12,7 @@ form.addEventListener("submit", function(e){
     const imgFile = document.createElement("img");
 
     imgFile.src = document.getElementById("image-file").value;
-    textTop.classList.add("textTop");
+    textTop.classList.add("top-text");
     textTop.innerHTML = document.getElementById("top-text").value;
 
     textBottom.classList.add("bottom-text");
@@ -26,4 +28,4 @@ form.addEventListener("submit", function(e){
 
 form.reset()
    
-    })
+    });

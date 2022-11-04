@@ -4,8 +4,8 @@ let topTxt = document.querySelector("#top-text");
 let bottomTxt = document.querySelector("#bottom-text");
 const button = document.querySelector("#submit");
 
-form.addEventListener("submit", function(e){
-    e.preventDefault();
+form.addEventListener("submit", function(event){
+    event.preventDefault();
     const meme = document.createElement("div");
     const textTop= document.createElement("div");
     const textBottom = document.createElement("div");

@@ -7,9 +7,9 @@ form.addEventListener("submit", function(e){
     const meme = document.createElement("div");
     const textTop= document.createElement("div");
     const textBottom = document.createElement("div");
-    const img = document.createElement("img");
+    const imgFile = document.createElement("img");
 
-    img.src = document.getElementById("image-file").value;
+    imgFile.src = document.getElementById("image-file").value;
     textTop.classList.add("textTop");
     textTop.innerHTML = document.getElementById("top-text").value;
 
@@ -20,7 +20,7 @@ form.addEventListener("submit", function(e){
     meme.classList.add("meme");
     meme.append(textTop);
     meme.append(textBottom);
-    meme.append(img);
+    meme.append(imgFile);
     let memeLocation = document.getElementById("location");
     memeLocation.append(meme);
 

@@ -19,7 +19,7 @@ form.addEventListener("submit", function(event){
     textBottom.innerHTML = document.getElementById("bottom-text").value;
       
 
-    memeImage.classList.add("memeImage");
+    memeImage.classList.add("meme");
     memeImage.append(textTop);
     memeImage.append(textBottom);
     memeImage.append(imgFile);

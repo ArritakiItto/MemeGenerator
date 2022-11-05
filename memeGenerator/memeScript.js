@@ -6,7 +6,7 @@ const button = document.querySelector("#submit");
 
 form.addEventListener("submit", function(event){
     event.preventDefault();
-    const meme = document.createElement("div");
+    const memeImage = document.createElement("div");
     const textTop= document.createElement("div");
     const textBottom = document.createElement("div");
     const imgFile = document.getElementById("image-file");
@@ -19,13 +19,12 @@ form.addEventListener("submit", function(event){
     textBottom.innerHTML = document.getElementById("bottom-text").value;
       
 
-    meme.classList.add("meme");
-    meme.append(textTop);
-    meme.append(textBottom);
-    meme.append(imgFile);
+    memeImage.classList.add("meme");
+    memeImage.append(textTop);
+    memeImage.append(textBottom);
+    memeImage.append(imgFile);
     let memeLocation = document.getElementById("location");
     memeLocation.append(meme);
 
 form.reset()
    
-    });

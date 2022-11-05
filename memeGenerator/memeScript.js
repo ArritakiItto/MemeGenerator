@@ -9,7 +9,7 @@ form.addEventListener("submit", function(event){
     const meme = document.createElement("div");
     const textTop= document.createElement("div");
     const textBottom = document.createElement("div");
-    const imgFile = document.createElement("img");
+    const imgFile = document.getElementById("image-file");
 
     imgFile.src = document.getElementById("image-file").value;
     textTop.classList.add("top-text");

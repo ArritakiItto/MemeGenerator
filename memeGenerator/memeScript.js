@@ -19,12 +19,13 @@ form.addEventListener("submit", function(event){
     textBottom.innerHTML = document.getElementById("bottom-text").value;
       
 
-    memeImage.classList.add("meme");
+    memeImage.classList.add("memeImage");
     memeImage.append(textTop);
     memeImage.append(textBottom);
     memeImage.append(imgFile);
-    let memeLocation = document.getElementById("location");
-    memeLocation.append(meme);
+    let memeCanvas = document.getElementById("canvas");
+    memeCanvas.append(memeImage);
 
 form.reset()
    
+    });
